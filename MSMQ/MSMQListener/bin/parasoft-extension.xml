@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<extension description="An extensible responder provided to SOAtest via the Extensibility Framework" name="MSMQ Listener" type="messageListener" xmlns="http://schemas.parasoft.com/extensibility-framework/v1/extension">
+
+<class>com.parasoft.virtualize.tools.MSMQListener</class>
+
+
+<form xmlns="urn:com/parasoft/extensibility-framework/gui">
+
+
+<section label="MSMQ Server">
+
+<field label="MSMQ Server IP"/>
+
+<field label="In QUEUE"/>
+
+<field label="Out QUEUE"/>
+
+<!--field label="Is Transactional? (true/false)"/ -->
+
+</section>
+
+</form>
+
+</extension>

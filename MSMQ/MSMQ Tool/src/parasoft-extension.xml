@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<extension xmlns="http://schemas.parasoft.com/extensibility-framework/v1/extension"
+    type="tool"
+    name="MSMQ Client"
+    description="Publish a message to an MSMQ queue">
+    
+    <class>com.parasoft.virtualize.tools.MSMQTool</class>
+    
+    <tool xmlns="http://schemas.parasoft.com/extensibility-framework/v1/tool"
+		icon="myIcon.gif"
+		useInputTab="true"
+		successIndicator="true"
+		category="MSMQ"
+		showInToolList="common"
+		showInOutputList="common">
+		<outputs>
+			<output key="output1" name="traffic header"/>
+			<output key="output2" name="traffic body"/>
+		</outputs>
+	
+	</tool>
+	
+	
+    
+    <form xmlns="urn:com/parasoft/extensibility-framework/gui">
+    	<section label="MSMQ Server">
+
+			<field id="ip" label="MSMQ Server IP"/>
+			<field id="outqueue" label="Send QUEUE"/>
+			<field id="inqueue" label="Receive QUEUE"/>
+			<field id="correlationid" label="CorrelationID [leave blank for None]"/>
+			<field id="timeout" label="Timeout (Millisends, default 30 seconds)"/>
+			<!--field label="Is Transactional? (true/false)"/ -->
+
+		</section>
+    </form>
+</extension>
