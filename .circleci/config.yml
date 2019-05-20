@@ -1,0 +1,11 @@
+version: 2
+jobs:
+  build:
+    working_directory: ~/parabank
+
+    steps:
+      - checkout
+      - run:
+          name: what IP
+          command: 'ifconfig'
+
